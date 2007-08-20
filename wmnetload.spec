@@ -1,7 +1,7 @@
 Summary: Network monitoring dockapp for WindowMaker
 Name:		wmnetload
 Version:	1.3
-Release:	1mdk
+Release:	%mkrel 1
 License:	GPL
 Group:		Graphical desktop/WindowMaker
 Source0:	%name-%version.tar.bz2
