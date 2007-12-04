@@ -10,7 +10,7 @@ Source11:	%name-32x32.png
 Source12:	%name-48x48.png
 URL:		ftp://truffula.com/pub/
 Requires:	XFree86-libs, xpm, libdockapp0
-BuildRequires:	XFree86-devel, xpm-devel, libdockapp0-devel
+BuildRequires:	X11-devel, xpm-devel, libdockapp0-devel
 Prefix:		/usr
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 
