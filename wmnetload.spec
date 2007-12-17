@@ -12,7 +12,6 @@ URL:		ftp://truffula.com/pub/
 Requires:	XFree86-libs, xpm, libdockapp0
 BuildRequires:	X11-devel, xpm-devel, libdockapp0-devel
 Prefix:		/usr
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 
 %description
