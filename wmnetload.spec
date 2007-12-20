@@ -33,6 +33,7 @@ perl -pi -e 's/^LIBRARY_RPATH(\s*?[^#].*$)/# \1/' configure.in
 perl -pi -e 's/^HEADER_SEARCH_PATH(\s*?[^#].*$)/# \1/' configure.in
 
 autoconf
+aclocal
 automake
 
 %configure
