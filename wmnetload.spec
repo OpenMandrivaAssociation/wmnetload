@@ -12,6 +12,7 @@ URL:		ftp://truffula.com/pub/
 Requires:	xpm
 BuildRequires:	X11-devel, xpm-devel, dockapp-devel
 Prefix:		/usr
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 
 %description
