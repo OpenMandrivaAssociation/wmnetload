@@ -58,7 +58,7 @@ cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
 [Desktop Entry]
 Type=Application
 Exec=%{prefix}/bin/%{name}
-Icon=%{name}.png
+Icon=%{name}
 Categories=System;Monitor;
 Name=WmNetLoad
 Comment=Network monitoring dockapp for WindowMaker
