@@ -53,11 +53,15 @@ install -m 644 %SOURCE10 %buildroot%{_miconsdir}/%{name}.png
 install -m 644 %SOURCE11 %buildroot%{_iconsdir}/%{name}.png
 install -m 644 %SOURCE12 %buildroot%{_liconsdir}/%{name}.png
 
-install -m 755 -d %buildroot%{_menudir}
-cat << EOF > %buildroot%{_menudir}/%{name}
-?package(%{name}):command="%{prefix}/bin/%{name}" icon="%{name}.png"\\
-                 needs="wmaker" section="Applications/Monitoring" title="WmNetLoad"\\
-                 longtitle="Network monitoring dockapp for WindowMaker"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=%{prefix}/bin/%{name}
+Icon=%{name}.png
+Categories=System;Monitor;
+Name=WmNetLoad
+Comment=Network monitoring dockapp for WindowMaker
 EOF
 
 
@@ -82,6 +86,6 @@ EOF
 %{_liconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
-%{_menudir}/%{name}
+%{_datadir}/applications/mandriva-%{name}.desktop
 
 
