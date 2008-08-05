@@ -35,6 +35,7 @@ perl -pi -e 's/^HEADER_SEARCH_PATH(\s*?[^#].*$)/# \1/' configure.in
 
 autoconf
 aclocal
+automake --add-missing
 automake
 
 %configure
