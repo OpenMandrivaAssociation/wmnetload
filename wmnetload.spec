@@ -10,6 +10,11 @@ Source11:	%name-32x32.png
 Source12:	%name-48x48.png
 URL:		ftp://truffula.com/pub/
 Requires:	xpm
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	X11-devel, xpm-devel, dockapp-devel
 Prefix:		/usr
 BuildRoot:	%{_tmppath}/%{name}-buildroot
